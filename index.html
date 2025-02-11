@@ -21,7 +21,7 @@
             height: 100vh;
         }
         img {
-            width: 150px;
+            width: 200px;
             height: auto;
             margin-bottom: 20px;
         }
@@ -38,26 +38,29 @@
             border: none;
             border-radius: 5px;
         }
-        button {
+        .btn {
             padding: 10px 20px;
             margin-top: 10px;
             border: none;
-            background: #ffcc00;
-            color: black;
             font-size: 1em;
             border-radius: 5px;
-            cursor: pointer;
+            cursor: not-allowed;
+            opacity: 0.5;
+            background: grey;
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="images/snapout_logo.jpeg" alt="SnapOut Logo">
+        <img src="snapout/images/snapout-logo.jpeg" alt="SnapOut Logo">
         <h1>SnapOut</h1>
         <p>Coming Soon on Android and Apple App Stores</p>
         <p>Stay updated! Enter your email:</p>
         <input type="email" placeholder="Your email address">
         <button>Notify Me</button>
+        <button class="btn" disabled>Download on Apple Store</button>
+        <button class="btn" disabled>Download on Google Play Store</button>
     </div>
 </body>
 </html>
